@@ -26,12 +26,19 @@
     "@types/node": "^8.0.10",
     "@types/react": "^15.0.37",
     "@types/react-dom": "^15.5.1",
+    "@types/react-redux": "^4.4.46",
+    "@types/redux-logger": "^3.0.0",
+    "axios": "^0.16.2",
     "express": "^4.15.3",
     "mongoose": "^4.11.1",
     "passport": "^0.3.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "redux": "^3.7.1"
+    "react-redux": "^5.0.5",
+    "redux": "^3.7.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
+    "youtube-api-search": "0.0.5"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^3.2.1",

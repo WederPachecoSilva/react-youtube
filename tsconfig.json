@@ -1,13 +1,13 @@
 {
     "compilerOptions": {
         "allowJs": true,
+        "checkJs": true,
         "outDir": "./dist/",
         "sourceMap": true,
-        "noImplicitAny": true,
+        "noImplicitAny": false,
         "module": "commonjs",
-        "target": "es5",
-        "jsx": "react",
-        "checkJs": true
+        "target": "es6",
+        "jsx": "react"
     },
     "include": [
         "./src/**/*"
