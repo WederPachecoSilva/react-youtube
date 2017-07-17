@@ -1,22 +1,29 @@
 const path = require('path');
 
 module.exports = {
-    entry: "./src/index.tsx",
+    entry: "./src/index.jsx",
     output: {
         path: path.join(__dirname, "/dist"),
         filename: "bundle.js"
     },
-
-    devtool: "source-map",
-
-    resolve: {
-        extensions: [".ts", ".tsx", ".js", ".json"]
-    },
-
     module: {
-        rules: [
-            { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
-            { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
+        loaders: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader',
+                query: {
+                presets: ['react', 'es2015']
+                }
+            },
+            {
+                test: /\.jsx$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader',
+                query: {
+                presets: ['react', 'es2015']
+                }
+            }
         ]
     }
 }
