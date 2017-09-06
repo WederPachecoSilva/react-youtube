@@ -27,10 +27,10 @@ export default class SearchBar extends React.Component {
 
     render() {
         return (
-                <form style={style.form} onSubmit={this.handleSubmit}>
-                        <input style={style.input} value={this.state.video} onChange={this.handleChange} placeholder="Qual vídeo?" />
-                        <button style={style.button} type="submit" className="btn btn-primary">Pesquisar</button>
-                </form> 
+            <form style={style.form} onSubmit={this.handleSubmit}>
+                <input style={style.input} value={this.state.video} onChange={this.handleChange} placeholder="Qual vídeo?" />
+                <button style={style.button} type="submit" className="btn btn-primary">Pesquisar</button>
+            </form> 
         )
     }
 }

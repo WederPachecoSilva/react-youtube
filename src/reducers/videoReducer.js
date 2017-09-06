@@ -8,7 +8,6 @@ export function searchVideo(state = [], action) {
     }
 }
 
-
 export function selectedVideo(state = {}, action) {
     switch (action.type) {
         case "CHANGE_SELECTED_VIDEO":

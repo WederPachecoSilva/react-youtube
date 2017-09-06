@@ -1,0 +1,17 @@
+{
+  "name": "youtube-server",
+  "version": "1.0.0",
+  "description": "Backend API server for the youtube project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wéder Pacheco",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "express-validator": "^3.2.1",
+    "mongoose": "^4.11.7"
+  }
+}
